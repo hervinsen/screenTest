@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:screenTest/model/menu_model.dart';
 import 'package:screenTest/screen/counter_screen.dart';
+import 'package:screenTest/screen/height_test_screen.dart';
 import 'package:screenTest/screen/test_screen.dart';
 import 'package:screenTest/widget/app_decoration.dart';
 import 'package:screenTest/widget/app_text.dart';
@@ -18,6 +19,9 @@ class LandingScreen extends StatelessWidget {
           onTap: () => CounterScreen.to(context)),
       MenuModel(
           pageRouteName: TestScreen.route, onTap: () => TestScreen.to(context)),
+      MenuModel(
+          pageRouteName: HeightTestScreen.route,
+          onTap: () => HeightTestScreen.to(context)),
     ];
 
     return Scaffold(

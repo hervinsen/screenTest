@@ -23,7 +23,6 @@ class TestScreen extends StatelessWidget {
           route,
           20,
           fontWeight: FontWeight.bold,
-          color: AppColors.textColor,
         ),
       ),
       body: SingleChildScrollView(
